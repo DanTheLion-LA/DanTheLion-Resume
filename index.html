@@ -44,6 +44,7 @@
       background: radial-gradient(1200px 600px at 80% -10%, rgba(106,169,255,.18), transparent 60%),
                   radial-gradient(900px 500px at -10% 10%, rgba(143,255,202,.12), transparent 60%),
                   var(--bg);
+      background-attachment: fixed;
       line-height: 1.6;
     }
 
@@ -211,7 +212,11 @@
           <div class="cta"><a class="btn secondary" href="#">Blog</a></div>
         </article>
         <article class="card">
-          <div class="thumb" role="img" aria-label="VR Voyage Amsterdam 1600 thumbnail"></div>
+          <a class="thumb" href="https://youtu.be/sfveQ_2cajM" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/sfveQ_2cajM/maxresdefault.jpg" 
+                alt="VR Oosterschelde submersible experience thumbnail" 
+                style="width:100%; height:auto; border-radius:12px;">
+          </a>
           <h3>VR Voyage - Amsterdam in the 17th century</h3>
           <p class="meta">Historical VR, Pipeline Automation, Optimising Render Cost</p>
           <div class="cta"><a class="btn secondary" href="#">Video</a><a class="btn secondary" href="#">Blog</a></div>
@@ -261,21 +266,21 @@
           <time>jan. 2023 — jul. 2023</time>
           <div>
             <h4>Graduation Internship · Het Nieuwe Kader (Arnhem)</h4>
-            <p>R&D to create a web-based automatic rigging tool for remote motion-capture sessions</p>
+            <p>R&D to create a web-based automatic rigging tool for remote motion-capture sessions.</p>
           </div>
         </div>
         <div class="row">
           <time>mrt. 2022 — aug. 2022</time>
           <div>
             <h4>Intern Product Specialist · Movella/Xsens (Enschede)</h4>
-            <p>Tech support, Product presentations together with marketing to find solutions for clients</p>
+            <p>Tech support, Product presentations together with marketing to find solutions for clients.</p>
           </div>
         </div>
         <div class="row">
           <time>jul. 2020 - aug. 2021</time>
           <div>
-            <h4>Parttime Junior VR Developer · Wired Workers</h4>
-            <p>Created a virtual showroom for all their Collaborate Robot Solutions using Unity WebGL</p>
+            <h4>Parttime Junior VR Developer · Wired Workers (Doetinchem)</h4>
+            <p>Created a virtual showroom for all their Collaborate Robot Solutions using Unity WebGL.</p>
           </div>
         </div>
       </div>
@@ -286,10 +291,12 @@
       <div class="section-title"><h2>Contact</h2></div>
       <div class="row" style="grid-template-columns: 1fr 1fr;">
         <div>
-          <p><strong>Available for a chat.</strong> Based in Meijel, The Netherlands; open to hybrid/remote.</p>
-          <p>Email: <a href="mailto:you@example.com">info.mvdvl@gmail.com</a><br>
-             LinkedIn: <a href="#">https://www.linkedin.com/in/dani%C3%ABl-van-leeuwen-235675100/</a><br>
-             Youtube: <a href="#">https://www.youtube.com/@DanTheLionVFX</a></p>
+          <p>Based in Meijel, The Netherlands; open to hybrid/remote.</p>
+          <p>
+            Email: <a href="mailto:info.mvdvl@gmail.com">info.mvdvl@gmail.com</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/dani%C3%ABl-van-leeuwen-235675100/">Daniël van Leeuwen</a><br>
+            YouTube: <a href="https://www.youtube.com/@DanTheLionVFX">DanTheLionVFX</a>
+          </p>
         </div>
 <!--         <form class="card" style="grid-column: auto; gap: 12px;" name="contact" onsubmit="event.preventDefault(); alert('Thanks! This demo form doesn’t send yet.');">
           <label>
