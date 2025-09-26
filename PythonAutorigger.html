@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Post — Daniël van Leeuwen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #11151a;
+      --muted: #97a3b6;
+      --text: #e5edf5;
+      --brand: #6aa9ff;
+      --brand-2: #8fffca;
+      --border: #1b2027;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --radius: 18px;
+      --maxw: 1100px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9fc;
+        --panel: #ffffff;
+        --muted: #53627a;
+        --text: #10131a;
+        --brand: #2563eb;
+        --brand-2: #059669;
+        --border: #e6ecf5;
+        --shadow: 0 10px 30px rgba(18, 33, 61, .08);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(106, 169, 255, .18), transparent 60%),
+        radial-gradient(900px 500px at -10% 10%, rgba(143, 255, 202, .12), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 36px);
+      margin-bottom: 18px;
+    }
+
+    .hint {
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+
+    /* Grid for blog content */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .cell {
+      padding: 20px;
+      min-height: 200px;
+      outline: none;
+    }
+
+    .cell:focus {
+      box-shadow: 0 0 0 2px var(--brand);
+    }
+
+    .cell img {
+      max-width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .cell h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .span-2 {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 780px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .span-2 {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Python Autorigger - Web-based auto rigging system</h1>
+    <p class="hint"></p>
+
+    <div class="grid">
+      <section class="cell">
+        <h2>Intro</h2>
+        <p>“During my graduation, I developed the TPose Autorigger (v1.0) — a web-based automatic rigging system designed for remote motion-capture pipelines. I built it to streamline character rigging in real time, enabling artists to upload raw mocap data and get fully rigged models with minimal manual intervention. From prototyping and benchmarking to user testing and iteration, I led the project end-to-end — blending VFX, usability research, and pipeline engineering to deliver a responsive, production-ready tool.”</p>
+      </section>
+
+      <section class="cell"">
+      <p><div style=" position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px;">
+        <iframe src="https://www.youtube.com/embed/zupK9LBxZwk"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen>
+        </iframe>
+    </div>
+    </p>
+    </section>
+
+    <section class="cell">
+      <h2>Section Heading</h2>
+      <p>Body content goes here…</p>
+    </section>
+
+    <section class="cell">
+      <p>Complementary text, list, or image.</p>
+    </section>
+
+    <section class="cell">
+      <p>Another section of your post.</p>
+    </section>
+
+    <section class="cell">
+      <p>Use this for notes or media.</p>
+    </section>
+
+    <section class="cell">
+      <p>Conclusion or summary paragraph.</p>
+    </section>
+
+    <section class="cell">
+      <p>Links, call to action, or references.</p>
+    </section>
+  </div>
+  </div>
+</body>
+
+</html>
