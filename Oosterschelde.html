@@ -9,47 +9,59 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stylesheet.css">
 
-</head>
 <body>
-  <div class="container">
-    <h1>Oosterschelde VR — Underwater Experience</h1>
+    <!-- Header with Back button -->
+  <header class="site" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">Daniel van Leeuwen</div>
+      <div class="links">
+        <a class="btn secondary" href="index.html">Back to Portfolio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="prose">
+    <h1>Python Autorigger - Web-based auto rigging system</h1>
     <p class="hint"></p>
 
-    <div class="grid">
-      <section class="cell">
-        <h2>Intro</h2>
-        <p>“The Oosterschelde VR project is an immersive underwater experience designed to bring the unique ecosystem of the Dutch estuary to life. Working within strict technical and hardware limitations, I guided the project from start to finish — creating optimized 3D environments, implementing interactive elements, and ensuring smooth performance on VR hardware. The goal was to make the beauty and fragility of the Oosterschelde accessible to a broad audience in a way that feels both educational and memorable.”</p>
+    <div class="post-grid">
+      <section class="post-cell">
+        <h2>Project Overview</h2>
+        <p></p>
       </section>
 
-      <section class="cell"">
-        <p>Use this cell for an image or supporting text.</p>
-      </section>
+      <section class="post-cell">
+        <p>
+          <div style=" position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px;">
+            <iframe src="https://www.youtube.com/embed/zupK9LBxZwk"
+              style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen>
+            </iframe>
+          </div>
+        </p>
+      </section> 
 
-      <section class="cell">
-        <h2>Section Heading</h2>
-        <p>Body content goes here…</p>
-      </section>
+    <section class="post-cell">
+      <img src="LINKHERE" 
+      alt="ALTHERE"
+      style="max-width:100%; height:auto; border-radius:12px;">
+    </section>
 
-      <section class="cell">
-        <p>Complementary text, list, or image.</p>
-      </section>
-
-      <section class="cell">
-        <p>Another section of your post.</p>
-      </section>
-
-      <section class="cell">
-        <p>Use this for notes or media.</p>
-      </section>
-
-      <section class="cell">
-        <p>Conclusion or summary paragraph.</p>
-      </section>
-
-      <section class="cell">
-        <p>Links, call to action, or references.</p>
-      </section>
-    </div>
+    <section class="post-cell">
+      <h2>Solution Overview</h2>
+      <p></p>
+    </section>
+    
   </div>
+  </main>
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Daniel van Leeuwen
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
